@@ -1,54 +1,42 @@
-# Sonam Tobgye — Academic Website
+# Sonam Tobgye — Modern academic website
 
-A minimalist, responsive academic website built from Sonam Tobgye's CV supplied 15 November 2026. HTML, CSS and JavaScript only; no paid hosting or build tools required.
+A standalone, responsive academic website. Built from the CV supplied 15 November 2026 and prepared for GitHub Pages. No WordPress, database, hosting fee, or build tools are necessary.
 
-## View it on your computer
+## Preview before publishing
 
-Double-click `index.html` in the extracted folder. The website has no server requirement. Internet access is needed only for optional Google fonts.
+Double-click `index.html` on your computer, or run a simple local web server in this folder. The site works without installation; Google Fonts will load when connected to the internet.
 
-## Update your details (easiest way)
+## Make edits yourself (the easy way)
 
-Open **`profile.js`** with any text editor (Notepad, VS Code or GitHub's pencil button). Every publication, teaching appointment, degree, award and email/LinkedIn URL is editable there.
+Open `profile.js` in GitHub and click the pencil button. Update the text between the quote marks, then choose **Commit changes**. Leave punctuation such as commas, square brackets, and curly braces intact. The site uses `profile.js` to populate the biography, teaching, research and education sections.
 
-- Add or remove publication entries from the `published`, `revision` and `review` arrays.
-- Update `status` when a journal decision changes. Move accepted articles into `published` only once accepted/published, and revise their bibliographic details accordingly.
-- To add verified DOIs, set `doi: 'https://doi.org/...'` on a publication.
-- Update `teaching`, `education`, `experience`, `awards` and `interests` using the existing examples.
-- Edit the introductory text and the headings directly in `index.html`.
-- For a photo: place your licensed photograph at `assets/portrait.jpg` and change the image line in `index.html` from `assets/portrait-placeholder.svg` to `assets/portrait.jpg`. Update its `alt` text to `Portrait of Sonam Tobgye`.
-- Edit `styles.css` to change colours, layout or font sizes.
+- **Your short introduction and biography:** `introduction` and `bio` at the beginning of `profile.js`.
+- **New teaching subjects:** the `courses` list within the appropriate `teaching` item.
+- **New published article:** insert an item in the `published` list. Add a `doi` field with a full `https://doi.org/...` link when available.
+- **Research status change:** move the manuscript object from `revision` or `review` to `published` when formally accepted/published, and update its status accurately. `review` includes papers with an editor, under review or newly submitted.
+- **Email, LinkedIn:** edit `contact`.
+- **Theme, layout and spacing:** `styles.css` (only when changing design).
+- **Page structure and navigation:** `index.html`.
 
-The email currently uses the contact email supplied in the CV. Remove/replace it in `profile.js` before publication if you prefer not to publish that address. The CV's phone number, referee contact details, work rights and other private information were deliberately excluded. **The original CV is not bundled**; the site says "CV available on request" to avoid inadvertently publishing sensitive details.
+## Add your own professional photograph
 
-## Publish on GitHub Pages
+1. Choose a portrait you own and are comfortable displaying publicly.
+2. Crop a good-quality photograph vertically (about 4:5 aspect ratio).
+3. Name the file `portrait.jpg` and upload it into the `assets` folder in your GitHub repository.
+4. The website automatically displays it. Until then, a clean initials placeholder appears, without broken-image icons. Alternatively, edit the `photo` path in `profile.js` if the filename is different.
 
-Your GitHub username from the earlier screenshot is `stobgye3-stack`. To use the short URL `https://stobgye3-stack.github.io/`:
+## Publish / replace your existing GitHub Pages site
 
-1. In GitHub, create a **Public** repository named exactly `stobgye3-stack.github.io`, or rename your existing repository under **Settings → General → Repository name**.
-2. Open the repository and choose **Add file → Upload files** (or **uploading an existing file** if empty).
-3. Upload **the contents of this folder** (`index.html`, `profile.js`, `script.js`, `styles.css`, `assets`, `README.md`), not the ZIP. `index.html` must be in the repository root.
-4. Click **Commit changes**.
-5. Go to **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/(root)**, then Save.
-6. When GitHub shows a successful deployment, open `https://stobgye3-stack.github.io/`.
+Your GitHub account is `stobgye3-stack` and the user-site repository is `stobgye3-stack.github.io`.
 
-If you keep a differently named repository, GitHub Pages can also publish it as a project site with a `/REPOSITORY-NAME/` suffix.
+1. Open https://github.com/stobgye3-stack/stobgye3-stack.github.io
+2. Optional but recommended: before replacing anything, download a backup of the current repository using **Code → Download ZIP**.
+3. Extract this ZIP. In GitHub, use **Add file → Upload files**. Upload all the files and the `assets` folder contents from the extracted package **not the ZIP itself**. For files with the same names, GitHub will update them; GitHub may require you to drag files into the upload interface. If upload refuses replacement, open the file, choose the pencil icon, paste the new contents and commit, or use GitHub Desktop.
+4. Make sure `index.html`, `styles.css`, `script.js`, and `profile.js` appear at repository top level, and that `assets/favicon.svg` and later `assets/portrait.jpg` are in the `assets` directory.
+5. Commit changes to `main`. Check **Settings → Pages** uses **Deploy from a branch / main / (root)**. Visit https://stobgye3-stack.github.io/ once the Pages deployment reports success.
 
-## Changes made while adapting the CV
+### Notes on source accuracy and privacy
 
-- Removed duplicate entries for "Using risk information to inform adolescent tobacco prevention" (the CV lists it twice).
-- Displayed "Journal of Asian Economics" under **Published** and grouped all other journal manuscripts by their current editorial status.
-- Preserved listed journal names, adding common stylistic punctuation in the display (e.g., Quality & Quantity).
-- Omitted all unverified journal-ranking claims from the public website. Publication rankings can be added later, with the classification year and verification source.
-- The CV's 'Teaching Sessional (School of Economics, Finance and Marketing)' affiliation was interpreted as RMIT University, based on the other relevant CV context. Confirm before publication.
-- The academic biography is an original summary based on the CV, not a verbatim reproduction.
-- No references to the sample portfolio's creator appear in these files.
+The 2026 journal paper and manuscript statuses are taken from the supplied CV, with duplicated tobacco-prevention submission removed. Publication data may evolve; please check before circulating. The public version does not include your telephone number, referee contact details, immigration/work-rights information, or the personal details listed in the last section of the CV. Journal rank claims are not displayed.
 
-## File inventory
-
-- `index.html`: page structure, introductory biography, sections
-- `profile.js`: **easy-to-edit professional data**
-- `script.js`: automatically renders the content from `profile.js`
-- `styles.css`: visual design and mobile layout
-- `assets/`: replaceable portrait placeholder and favicon
-
-This site is static and requires no back-end or subscription.
+This website contains no references to the example site's creator. All source files are included and editable.

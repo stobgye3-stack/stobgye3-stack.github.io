@@ -2,6 +2,20 @@
    Statuses are based on the CV supplied 15 November 2026; update when decisions change.
    Journal ranking labels are deliberately not shown until independently verified. */
 window.SONAM_PROFILE = {
+  name: 'Sonam Tobgye',
+  credentials: 'PhD',
+  position: 'Lecturer · Applied Economist',
+  institution: 'Kaplan Business School',
+  location: 'Melbourne, Australia',
+  photo: 'assets/portrait.jpg', // Add your own JPG with this filename; placeholder displays otherwise.
+  introduction: 'I study economic inequality, health and development, and apply quantitative methods to real-world questions in policy and business.',
+  bio: [
+    'I am a Melbourne-based lecturer, applied economist and policy analyst, bringing more than a decade of experience across higher education, quantitative research and public-sector policy and audit roles.',
+    'My research interests span gender and health inequality, applied econometrics, machine learning, hydropower and energy security, and fiscal resilience. I hold a PhD in Economics from RMIT University (2024), an MPhil from Monash University (2020) and an MA in International and Development Economics from HTW Berlin (2013).',
+    'Before entering academia, I worked in senior research, policy and public-sector audit roles in Bhutan. That experience continues to inform my interest in research that contributes to informed decisions.'
+  ],
+  teachingPhilosophy: 'My approach links economic and statistical theory to authentic datasets, business problems and policy decisions, with an emphasis on inclusive teaching, analytical tools and constructive feedback.',
+
   contact: { email: 'sonamtobgyeyezer@gmail.com', linkedin: 'https://www.linkedin.com/in/sonam-tobgye-70404819/' },
   interests: ['Applied economics', 'Gender & health inequality', 'Machine learning', 'Energy & hydropower', 'Fiscal risk & forecasting', 'Economic policy'],
   teaching: [
