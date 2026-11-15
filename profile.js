@@ -7,7 +7,7 @@ window.SONAM_PROFILE = {
   position: 'Lecturer · Applied Economist',
   institution: 'Kaplan Business School',
   location: 'Melbourne, Australia',
-  photo: 'assets/portrait.jpg', // Add your own JPG with this filename; placeholder displays otherwise.
+  photo: photo: 'assets/8C299C7A-020C-4742-B0A2-D4CF9545E490.PNG', // Add your own JPG with this filename; placeholder displays otherwise.
   introduction: 'I study economic inequality, health and development, and apply quantitative methods to real-world questions in policy and business.',
   bio: [
     'I am a Melbourne-based lecturer, applied economist and policy analyst, bringing more than a decade of experience across higher education, quantitative research and public-sector policy and audit roles.',
