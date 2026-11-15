@@ -16,7 +16,7 @@ window.SONAM_PROFILE = {
   ],
   teachingPhilosophy: 'My approach links economic and statistical theory to authentic datasets, business problems and policy decisions, with an emphasis on inclusive teaching, analytical tools and constructive feedback.',
 
-  contact: { email: 'sonamtobgyeyezer@gmail.com', linkedin: 'https://www.linkedin.com/in/sonam-tobgye-70404819/' },
+  contact: { email: 'stobgye3@gmail.com', linkedin: 'https://www.linkedin.com/in/sonam-tobgye-70404819/' },
   interests: ['Applied economics', 'Gender & health inequality', 'Machine learning', 'Energy & hydropower', 'Fiscal risk & forecasting', 'Economic policy'],
   teaching: [
     {institution:'Kaplan Business School', role:'Lecturer · Melbourne', period:'2023–present', courses:['Quantitative Analysis (STAM4000)','Artificial Intelligence and Machine Learning (DATA4800)','Data-Driven Decision Making & Forecasting (DATA4400)','Economics (ECOM4000)','Capstone Project (DATA6000)','Skills for Numerical Analysis (BUS109)','Quantitative Analysis (BUS208)'], note:'Subject coordinator: DATA4400'},
